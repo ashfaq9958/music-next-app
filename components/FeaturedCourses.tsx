@@ -1,7 +1,6 @@
 "use client";
 import Link from "next/link";
 import courseData from "../data/music_courses.json";
-import { Button } from "./ui/moving-border";
 
 interface Course {
   id: number;

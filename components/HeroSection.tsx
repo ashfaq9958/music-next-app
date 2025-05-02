@@ -18,7 +18,7 @@ function HeroSection() {
 
         <p className="mt-6 text-base sm:text-lg text-neutral-300 font-medium leading-relaxed">
           Unlock your full musical potential with expertly crafted courses.
-          Whether you're just starting out or refining your skills, our path
+          Whether you&#39;re just starting out or refining your skills, our path
           will elevate your sound.
         </p>
 
@@ -31,15 +31,6 @@ function HeroSection() {
               Explore courses
             </Button>
           </Link>
-
-          {/* <Link href="/courses">
-            <Button
-              borderRadius="1.75rem"
-              className="bg-white dark:bg-black text-black dark:text-white border-neutral-200 dark:border-slate-800 cursor-pointer transition-all hover:scale-105 hover:shadow-lg"
-            >
-              Get Consultation
-            </Button>
-          </Link> */}
         </div>
       </div>
       <div className="mt-16 text-sm text-neutral-400 flex flex-wrap items-center justify-center gap-6">
