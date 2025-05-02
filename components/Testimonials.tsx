@@ -40,11 +40,6 @@ const testimonials = [
 function Testimonials() {
   return (
     <section className="relative w-full h-[45rem] flex flex-col items-center justify-center overflow-hidden rounded-2xl bg-white dark:bg-neutral-950 antialiased px-6">
-      {/* Decorative Blurred Background Gradient */}
-      {/* <div className="absolute -top-10 -left-10 w-[30rem] h-[30rem] rounded-full bg-gradient-to-br from-indigo-300 to-purple-400 opacity-20 blur-3xl dark:from-indigo-800 dark:to-purple-900"></div>
-      <div className="absolute -bottom-10 -right-10 w-[25rem] h-[25rem] rounded-full bg-gradient-to-tr from-pink-300 to-yellow-200 opacity-20 blur-2xl dark:from-pink-700 dark:to-yellow-500"></div> */}
-
-      {/* Subtle Grid Background */}
       <div
         className={cn(
           "absolute inset-0 z-0",
@@ -53,11 +48,7 @@ function Testimonials() {
           "dark:[background-image:linear-gradient(to_right,#2a2a2a_1px,transparent_1px),linear-gradient(to_bottom,#2a2a2a_1px,transparent_1px)]"
         )}
       />
-
-      {/* Radial Focus Mask */}
       <div className="pointer-events-none absolute inset-0 z-10 bg-white dark:bg-black [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
-
-      {/* Section Heading */}
       <div className="z-20 text-center mb-12 px-4 max-w-3xl">
         <h2 className="text-4xl sm:text-5xl font-extrabold text-neutral-900 dark:text-white leading-tight">
           Hear Our Harmony
@@ -67,8 +58,6 @@ function Testimonials() {
           and resonate today.
         </p>
       </div>
-
-      {/* Animated Cards */}
       <div className="z-20 w-full max-w-7xl">
         <InfiniteMovingCards
           items={testimonials}
