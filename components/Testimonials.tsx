@@ -39,7 +39,11 @@ const testimonials = [
 
 function Testimonials() {
   return (
-    <section className="relative w-full h-[42rem] flex flex-col items-center justify-center overflow-hidden rounded-xl bg-white dark:bg-neutral-950 antialiased px-4">
+    <section className="relative w-full h-[45rem] flex flex-col items-center justify-center overflow-hidden rounded-2xl bg-white dark:bg-neutral-950 antialiased px-6">
+      {/* Decorative Blurred Background Gradient */}
+      {/* <div className="absolute -top-10 -left-10 w-[30rem] h-[30rem] rounded-full bg-gradient-to-br from-indigo-300 to-purple-400 opacity-20 blur-3xl dark:from-indigo-800 dark:to-purple-900"></div>
+      <div className="absolute -bottom-10 -right-10 w-[25rem] h-[25rem] rounded-full bg-gradient-to-tr from-pink-300 to-yellow-200 opacity-20 blur-2xl dark:from-pink-700 dark:to-yellow-500"></div> */}
+
       {/* Subtle Grid Background */}
       <div
         className={cn(
@@ -53,15 +57,18 @@ function Testimonials() {
       {/* Radial Focus Mask */}
       <div className="pointer-events-none absolute inset-0 z-10 bg-white dark:bg-black [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
 
-      {/* Heading */}
-      <h2 className="z-20 text-4xl sm:text-5xl font-extrabold text-center text-neutral-900 dark:text-white mb-10 tracking-tight">
-        Hear Our Harmony
-        <span className="block text-lg font-medium text-neutral-500 dark:text-neutral-400 mt-2">
-          Voices of Success from Timeless Creators
-        </span>
-      </h2>
+      {/* Section Heading */}
+      <div className="z-20 text-center mb-12 px-4 max-w-3xl">
+        <h2 className="text-4xl sm:text-5xl font-extrabold text-neutral-900 dark:text-white leading-tight">
+          Hear Our Harmony
+        </h2>
+        <p className="mt-4 text-lg text-neutral-600 dark:text-neutral-400">
+          Discover timeless reflections from literary legends that still inspire
+          and resonate today.
+        </p>
+      </div>
 
-      {/* Moving Cards */}
+      {/* Animated Cards */}
       <div className="z-20 w-full max-w-7xl">
         <InfiniteMovingCards
           items={testimonials}

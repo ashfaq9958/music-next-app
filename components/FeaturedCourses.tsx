@@ -48,23 +48,23 @@ function FeaturedCourses() {
                 <p className="text-sm text-neutral-600 dark:text-neutral-400 mb-6 line-clamp-3">
                   {course.description}
                 </p>
-                <span className="mt-auto inline-block text-sm font-medium text-teal-600 dark:text-teal-400 transition-colors group-hover:underline">
+                {/* <span className="mt-auto inline-block text-sm font-medium text-teal-600 dark:text-teal-400 transition-colors group-hover:underline">
                   Learn More →
-                </span>
+                </span> */}
               </div>
             </div>
           </Link>
         ))}
       </div>
 
-      <div className="mt-20 text-center">
+      {/* <div className="mt-20 text-center">
         <Button
           borderRadius="1.75rem"
           className="bg-white dark:bg-black text-black dark:text-white border-neutral-200 dark:border-slate-800 cursor-pointer transition-all hover:scale-105 hover:shadow-lg"
         >
           All courses
         </Button>
-      </div>
+      </div> */}
     </section>
   );
 }
