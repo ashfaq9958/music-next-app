@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useRef, ElementType, ComponentPropsWithoutRef, ReactNode } from "react";
 import {
   motion,
   useAnimationFrame,
@@ -7,28 +7,31 @@ import {
   useMotionValue,
   useTransform,
 } from "motion/react";
-import { useRef } from "react";
 import { cn } from "@/lib/utils";
 
-export function Button({
+// Polymorphic Button Props
+type ButtonProps<T extends ElementType> = {
+  as?: T;
+  borderRadius?: string;
+  containerClassName?: string;
+  borderClassName?: string;
+  duration?: number;
+  className?: string;
+  children: ReactNode;
+} & Omit<ComponentPropsWithoutRef<T>, "as" | "children">;
+
+export function Button<T extends ElementType = "button">({
   borderRadius = "1.75rem",
   children,
-  as: Component = "button",
+  as,
   containerClassName,
   borderClassName,
   duration,
   className,
   ...otherProps
-}: {
-  borderRadius?: string;
-  children: React.ReactNode;
-  as?: React.ElementType;
-  containerClassName?: string;
-  borderClassName?: string;
-  duration?: number;
-  className?: string;
-  [key: string]: any;
-}) {
+}: ButtonProps<T>) {
+  const Component = as || "button";
+
   return (
     <Component
       className={cn(
@@ -69,19 +72,20 @@ export function Button({
   );
 }
 
+type MovingBorderProps = {
+  children: ReactNode;
+  duration?: number;
+  rx?: string;
+  ry?: string;
+} & React.SVGProps<SVGSVGElement>;
+
 export const MovingBorder = ({
   children,
   duration = 3000,
   rx,
   ry,
   ...otherProps
-}: {
-  children: React.ReactNode;
-  duration?: number;
-  rx?: string;
-  ry?: string;
-  [key: string]: any;
-}) => {
+}: MovingBorderProps) => {
   const pathRef = useRef<SVGRectElement | null>(null);
   const progress = useMotionValue<number>(0);
 
