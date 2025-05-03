@@ -1,5 +1,4 @@
 import { Mail, User, MessageSquare, PencilLine } from "lucide-react";
-import { Button } from "@/components/ui/moving-border";
 import { Meteors } from "@/components/ui/meteors";
 
 export default function ContactUs() {
@@ -20,7 +19,7 @@ export default function ContactUs() {
 
               {/* Heading */}
               <p className="text-center text-gray-400 text-sm sm:text-base mb-10">
-                We'd love to hear from you. Please fill out the form below.
+                We&apos;d love to hear from you. Please fill out the form below.
               </p>
 
               {/* Description */}
@@ -69,7 +68,7 @@ export default function ContactUs() {
 
                 {/* Submit Button */}
                 <div className="text-center">
-                  <button className="self-start rounded-lg bg-gradient-to-r from-blue-500 to-teal-400 px-5 py-2 text-sm font-medium text-white transition hover:brightness-110" >
+                  <button className="self-start rounded-lg bg-gradient-to-r from-blue-500 to-teal-400 px-5 py-2 text-sm font-medium text-white transition hover:brightness-110">
                     Send Message
                   </button>
                 </div>

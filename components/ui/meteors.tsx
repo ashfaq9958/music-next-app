@@ -47,7 +47,7 @@ export const Meteors = ({
             style={{
               top: "-40px", // Start above the container
               left: `${positionPercent}%`,
-              // transform: `scale(${size})`,
+              transform: `scale(${size})`,
               animationDelay: Math.random() * 5 + "s", // Random delay between 0-5s
               animation: `meteor-fall linear ${duration}s ${delay}s infinite`, // Keep some randomness in duration
             }}
