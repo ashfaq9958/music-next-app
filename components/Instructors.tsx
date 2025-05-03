@@ -64,22 +64,9 @@ const Instructors = () => {
 
   return (
     <section className="w-full bg-gradient-to-b from-black via-zinc-900 to-zinc-950 text-white py-20 px-4 md:px-12">
-      <div className="max-w-6xl mx-auto text-center mb-20">
-        {/* <h2 className="text-teal-400 text-xs font-bold uppercase tracking-[0.2em] mb-3">
-          Meet Our Instructors
-        </h2> */}
-        {/* <h3 className="text-4xl md:text-5xl font-extrabold tracking-tight text-white mb-4 drop-shadow-xl">
-          Expert Mentorship That Inspires
-        </h3>
-        <p className="text-base md:text-lg text-gray-400 max-w-2xl mx-auto leading-relaxed mt-2">
-          Learn from seasoned professionals who blend experience, passion, and
-          mentorship to empower your creative growth through immersive programs.
-        </p> */}
-      </div>
-
       <div
         ref={ref}
-        className="h-[400vh] bg-black w-full dark:border dark:border-white/[0.1] rounded-md relative pt-40 overflow-clip"
+        className="h-[400vh] w-full relative pt-40 overflow-clip border border-white/10 rounded-md"
       >
         <GoogleGeminiEffect
           pathLengths={[
@@ -90,11 +77,10 @@ const Instructors = () => {
             pathLengthFifth,
           ]}
           title="Expert Mentorship That Inspires"
-          description="Learn from seasoned professionals who blend experience, passion, and
-          mentorship to empower your creative growth through immersive programs."
+          description="Learn from seasoned professionals who blend experience, passion, and mentorship to empower your creative growth through immersive programs."
         />
 
-        <div className="absolute w-full top-[80%] md:top-110 flex items-center justify-center  px-4">
+        <div className="absolute w-full top-[75%] md:top-120 flex items-center justify-center px-4">
           <div className="max-w-5xl w-full flex items-center justify-center">
             <AnimatedTooltip items={people} />
           </div>
