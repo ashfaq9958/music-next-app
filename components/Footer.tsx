@@ -58,7 +58,7 @@ const Footer = () => {
             </li>
             <li className="flex items-center gap-2">
               <MapPin className="w-4 h-4 text-teal-400" />
-              Aligarh, Uttar Pradesh
+              Noida, Uttar Pradesh
             </li>
           </ul>
         </div>
@@ -67,16 +67,13 @@ const Footer = () => {
         <div>
           <h3 className="text-white font-semibold mb-4 text-lg">Follow Us</h3>
           <div className="flex gap-4 text-gray-400">
-            <a href="#" className="hover:text-white transition">
+            <a href="https://github.com/ashfaq9958" target="_blank" className="hover:text-white transition">
               <Github className="w-5 h-5" />
             </a>
-            <a href="#" className="hover:text-white transition">
+            <a href="https://www.linkedin.com/in/ashfaqahmad99/" target="_blank" className="hover:text-white transition">
               <Linkedin className="w-5 h-5" />
             </a>
-            <a href="#" className="hover:text-white transition">
-              <Twitter className="w-5 h-5" />
-            </a>
-            <a href="#" className="hover:text-white transition">
+            <a href="https://www.instagram.com/yusufkhan.845/" target="_blank" className="hover:text-white transition">
               <Instagram className="w-5 h-5" />
             </a>
           </div>
